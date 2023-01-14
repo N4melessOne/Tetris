@@ -17,6 +17,7 @@ CREATE TABLE [dbo].[Scores] (
     [Id]          INT        IDENTITY (1, 1) NOT NULL,
     [UserId]      INT        NULL,
     [Score]       INT        NULL,
+    [Lines]       INT        NULL,
     [DateOfScore] ROWVERSION NOT NULL
 );
 
