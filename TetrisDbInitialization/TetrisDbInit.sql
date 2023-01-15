@@ -17,8 +17,7 @@ CREATE TABLE [dbo].[Scores] (
     [Id]          INT        IDENTITY (1, 1) NOT NULL,
     [UserId]      INT        NULL,
     [Score]       INT        NULL,
-    [Lines]       INT        NULL,
-    [DateOfScore] ROWVERSION NOT NULL
+    [Lines]       INT        NULL
 );
 
 --CREATE Users
@@ -29,7 +28,7 @@ CREATE TABLE [dbo].[Users] (
 );
 
 --INSERT Users
-INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (1, N'L4cos', N'teszt_0')
-INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (2, N'Z0li', N'teszt_1')
-INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (3, N'S1di', N'teszt_2')
-INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (4, N'B4lage', N'teszt_3')
+INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (1, N'L4cos', N'teszt_0');
+INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (2, N'Z0li', N'teszt_1');
+INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (3, N'S1di', N'teszt_2');
+INSERT INTO [dbo].[Users] ([Id], [Username], [Passwd]) VALUES (4, N'B4lage', N'teszt_3');
