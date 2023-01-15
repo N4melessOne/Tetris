@@ -4,9 +4,9 @@
     switch ($request)
     {
         case "POST":
-            if (!empty($_POST["username"] && !empty($_POST["passwd"]))){
+            if (!empty($_POST["username"]) && !empty($_POST["passwd"]) && !empty($_POST["email"])){
                 global $connection;
-                $query = "INSERT INTO [dbo].Users (Username, Passwd) VALUES ('{$_POST["username"]}', '{$_POST["passwd"]}')";
+                $query = "INSERT INTO [dbo].Users (Username, Passwd, Email) VALUES ('{$_POST["username"]}', '{$_POST["passwd"]}', '{$_POST["email"]}')";
                 $params = array();
                 $options = array( "Scrollable" => SQLSRV_CURSOR_KEYSET );
                 $statement = sqlsrv_query($connection, $query, $params, $options);

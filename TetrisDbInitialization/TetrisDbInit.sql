@@ -24,7 +24,8 @@ CREATE TABLE [dbo].[Scores] (
 CREATE TABLE [dbo].[Users] (
     [Id]       INT           IDENTITY (1, 1) NOT NULL,
     [Username] VARCHAR (255) NOT NULL,
-    [Passwd]   VARCHAR (255) NOT NULL
+    [Passwd]   VARCHAR (255) NOT NULL,
+    [Email]    VARCHAR (255) NOT NULL
 );
 
 --INSERT Users
