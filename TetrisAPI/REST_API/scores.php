@@ -36,7 +36,7 @@ function getAllScores(){
     global $connection;
     $response = array();
     $score = array();
-    $query = "SELECT * FROM [dbo].Scores;";
+    $query = "SELECT * FROM [dbo].Scores ORDER BY Score DESC";
     $result = sqlsrv_query($connection, $query);
 
     while($row = sqlsrv_fetch_object($result)) {
@@ -56,7 +56,7 @@ function getScoresOfUser($userId){
     global $connection;
     $response = array();
     $score = array();
-    $query = "SELECT * FROM [dbo].Scores WHERE UserId = $userId";
+    $query = "SELECT * FROM [dbo].Scores WHERE UserId = $userId ORDER BY Score DESC";
     $result = sqlsrv_query($connection, $query);
 
     while($row = sqlsrv_fetch_object($result)) {
