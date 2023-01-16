@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="./login/login.css">
+    <link rel="stylesheet" href="./login/registration.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Home</title>
+   </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div><img src="Img/joy.png"></div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="./game/game.html">Tetris</a></li>
+        <li><a href="./Pages/contact.html">Contact</a></li>
+        <li><a href="./Pages/scoreboard.html">Scoreboard</a></li>
+      </ul>
+      <div class="buttons">
+        <input type="button" value="Login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+        <input type="button" value="Register" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+
+        <div id="id01" class="modal">
+          
+            <form class="modal-content animate" action="#" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="id02" class="modal">
+            
+              <form class="modal-content animate" action="#" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <label for="psw"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email " name="email" required>
+                    
+                  <button type="submit">Registration</button>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+              </form>
+            </div>
+      </div>
+    </nav>
+    <div class="text-content">
+      <h2>Üdvözöljük weblapunkon,<br>ahol felidézzük a régi élményeket</h2>
+      <p>Ezen a weboldalon Tetris játékot fejlesztettünk, ahol a regsztrált játékosok rekordokat dönthetnek.</p>
+    </div>
+  </header>
+</body>
+</html>

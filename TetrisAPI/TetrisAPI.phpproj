@@ -10,5 +10,7 @@
     <PHPDevAutoPort>false</PHPDevAutoPort>
     <PHPDevRouting />
     <PHPDevPort>8888</PHPDevPort>
+    <RootNamespace>TetrisAPI</RootNamespace>
+    <WebRoot />
   </PropertyGroup>
 </Project>
